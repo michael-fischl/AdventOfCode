@@ -2,9 +2,9 @@
 
 Day 1: No Time for a Taxicab
 
-Day 2: 
+Day 2: Bathroom Security
 
-3.
+Day 3: Squares With Three Sides
 
 4.
 

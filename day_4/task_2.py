@@ -1,3 +1,13 @@
+def getCaesar(string, shift):
+    shifted_string = ""
+    for char in string:
+        alphabet = "abcdefghijklmnopqrstuvwxyz"
+        to_shift = alphabet.index(char)
+        to_add = shift % 26
+        shifted = (to_shift + to_add) % 26
+        shifted_string += alphabet[shifted]
+    return shifted_string
+
 with open('input', 'r') as f:
     sum = 0
     for line in f:
@@ -38,5 +48,6 @@ with open('input', 'r') as f:
             checksum += list[i][0]
 
         if checksum == check:
-            sum += int(sector)
-    print "The sum of valid sectors is " + str(sum) + "!"
+           deciphered = getCaesar(room, int(sector))
+           if "northpole" in deciphered:
+               print "Thr sector ID is " + sector + "!"

@@ -10,7 +10,7 @@ Day 4: Security Through Obscurity
 
 Day 5: How About a Nice Game of Chess?
 
-6.
+Day 6: Signals and Noise
 
 7.
 

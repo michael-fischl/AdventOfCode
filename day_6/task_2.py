@@ -13,5 +13,5 @@ with open('input', 'r') as f:
                 occurences[i][line[i]] = 1
     message = ""
     for i in range(message_length):
-        message += max(occurences[i].iteritems(), key=operator.itemgetter(1))[0]
+        message += min(occurences[i].iteritems(), key=operator.itemgetter(1))[0]
     print "The message is " + message + "!"
